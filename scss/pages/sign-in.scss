@@ -1,0 +1,7 @@
+//sign-in page
+@use "../abstracts";
+@use "../base";
+
+h1 {
+    color: abstracts.$primaryColor;
+}
