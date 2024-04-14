@@ -157,8 +157,75 @@ button {
   background: transparent;
 }
 
-h1 {
-  color: red;
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.form__group {
+  margin-top: 20px;
+  width: 100%;
+}
+.form__label {
+  display: block;
+  font-size: 22px;
+  font-weight: 600;
+  color: #09006c;
+  margin-bottom: 10px;
+}
+.form__text-input {
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  height: 60px;
+  padding: 14px 12px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+.form__input {
+  flex: 1;
+  height: 100%;
+  border: none;
+}
+.form__actions {
+  margin-top: 20px;
+}
+
+.btn {
+  min-width: 208px;
+  min-height: 52px;
+  font-size: 22px;
+  font-weight: 600;
+  border-radius: 8px;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+.btn--primary {
+  background-color: #c3d832;
+}
+
+.auth {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 32px;
+  background-color: #09006c;
+}
+.auth__form {
+  width: 464px;
+  height: 381px;
+  padding: 16px 20px;
+  background-color: #eaf7fe;
+  border-radius: 12px;
+}
+.auth__form-title {
+  font-size: 42px;
+  font-weight: 800;
+  color: #09006c;
 }
 
 /*# sourceMappingURL=sign-in.css.map */

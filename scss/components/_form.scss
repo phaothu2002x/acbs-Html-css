@@ -1,0 +1,37 @@
+@use "../abstracts";
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    &__group {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    &__label {
+        display: block;
+        font-size: 22px;
+        font-weight: 600;
+        color: abstracts.$primaryColor;
+        margin-bottom: 10px;
+    }
+    &__text-input {
+        display: flex;
+        align-items: center;
+        border-radius: 8px;
+        height: 60px;
+        padding: 14px 12px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+    }
+    &__input {
+        flex: 1;
+        height: 100%;
+        border: none;
+    }
+    &__actions {
+        margin-top: 20px;
+    }
+}

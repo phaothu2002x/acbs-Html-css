@@ -7,8 +7,49 @@
         <title>Sign-in Page</title>
     </head>
     <body>
-        <main>
-            <h1>This is sign-in page</h1>
+        <main class="auth">
+            <a href="#!" class="logo">
+                <img
+                    src="./assets/img/Logo-ACBS.svg"
+                    alt="Logo"
+                    class="logo__img"
+                />
+            </a>
+            <div class="auth__form">
+                <form action="" class="form">
+                    <h2 class="auth__form-title">Đăng Nhập</h2>
+                    <div class="form__group">
+                        <label for="username" class="form__label">
+                            Tên Đăng nhập
+                        </label>
+                        <div class="form__text-input">
+                            <input
+                                type="text"
+                                name="username"
+                                id="username"
+                                class="form__input"
+                            />
+                        </div>
+                    </div>
+                    <div class="form__group">
+                        <label for="password" class="form__label">
+                            Mật khẩu
+                        </label>
+                        <div class="form__text-input">
+                            <input
+                                type="password"
+                                name="password"
+                                id="password"
+                                class="form__input"
+                            />
+                        </div>
+                    </div>
+
+                    <div class="form__actions">
+                        <button class="btn btn--primary">Đăng nhập</button>
+                    </div>
+                </form>
+            </div>
         </main>
     </body>
 </html>

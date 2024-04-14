@@ -1,0 +1,16 @@
+@use "../abstracts";
+
+.btn {
+    min-width: 208px;
+    min-height: 52px;
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 8px;
+    &:hover {
+        opacity: 0.8;
+    }
+
+    &--primary {
+        background-color: abstracts.$btn-primary;
+    }
+}
