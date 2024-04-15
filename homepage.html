@@ -5,8 +5,81 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Home page</title>
         <link rel="stylesheet" href="./assets/css/pages/home.css" />
+        <!-- scripts -->
+        <script src="./js/scripts.js"></script>
     </head>
     <body>
-        <h1>HomePage</h1>
+        <header id="header" class="header"></header>
+        <script>
+            load("#header", "./templates/header.html");
+        </script>
+
+        <div class="nav-channel">
+            <ul class="nav-channel__list">
+                <li class="nav-channel__item nav-channel__item--active">
+                    <a href="#!" class="nav-channel__link">
+                        <div class="nav-channel__icon">
+                            <img src="./assets/img/homeIcon.png" alt="icon" />
+                        </div>
+                        <h3 class="nav-channel__heading">Trang chủ</h3>
+                    </a>
+                </li>
+                <li class="nav-channel__item">
+                    <a href="#!" class="nav-channel__link">
+                        <div class="nav-channel__icon">
+                            <img
+                                src="./assets/img/message-circle.png"
+                                alt="icon"
+                            />
+                        </div>
+                        <h3 class="nav-channel__heading">Zalo</h3>
+                        <span class="nav-channel__notify-badge">14</span>
+                    </a>
+                </li>
+                <li class="nav-channel__item">
+                    <a href="#!" class="nav-channel__link">
+                        <div class="nav-channel__icon">
+                            <img src="./assets/img/facebook.png" alt="icon" />
+                        </div>
+                        <h3 class="nav-channel__heading">Facebook</h3>
+                        <span class="nav-channel__notify-badge">24</span>
+                    </a>
+                </li>
+                <li class="nav-channel__item">
+                    <a href="#!" class="nav-channel__link">
+                        <div class="nav-channel__icon">
+                            <img
+                                src="./assets/img/message-circle.png"
+                                alt="icon"
+                            />
+                        </div>
+                        <h3 class="nav-channel__heading">Telegram</h3>
+                        <span class="nav-channel__notify-badge">24</span>
+                    </a>
+                </li>
+                <li class="nav-channel__item">
+                    <a href="#!" class="nav-channel__link">
+                        <div class="nav-channel__icon">
+                            <img
+                                src="./assets/img/message-circle.png"
+                                alt="icon"
+                            />
+                        </div>
+                        <h3 class="nav-channel__heading">ChatBox</h3>
+                        <span class="nav-channel__notify-badge">24</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- content info  -->
+        <div class="tab-content-container">
+            <aside class="sidebar">
+                <div class="sidebar__execution">yeu cau chua xu ly</div>
+                <div class="sidebar__task">Tac vu chu dong</div>
+            </aside>
+
+            <section class="statistic">Statistic</section>
+            <section class="user-section">nguoi dung hoat dong gan day</section>
+        </div>
     </body>
 </html>

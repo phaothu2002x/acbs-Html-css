@@ -1,0 +1,50 @@
+@use "../abstracts";
+
+.header {
+    background-color: abstracts.$primaryColor;
+    height: abstracts.$header-height;
+    padding: 24px;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo__img {
+            width: 151px;
+            height: 51px;
+        }
+    }
+
+    &__actions {
+        height: 56px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        &-group {
+            min-width: 100px;
+        }
+
+        &-btn {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+    }
+
+    &__actions-title {
+        font-size: 18px;
+        font-weight: 500;
+        color: #feffff;
+    }
+
+    &__actions-avatar {
+        overflow: hidden;
+        .avatar__img {
+            width: 54px;
+            height: 54px;
+            border-radius: 50%;
+            object-fit: fill;
+            cursor: pointer;
+        }
+    }
+}

@@ -3,10 +3,18 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./assets/css/main.css" />
         <title>Hell page</title>
+        <!-- styles -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
+
+        <!-- scripts -->
+        <script src="./js/scripts.js"></script>
     </head>
     <body>
+        <header id="header"></header>
+        <script>
+            load("#header", "./templates/header.html");
+        </script>
         <h1 class="container">Welcome to hell</h1>
         <div><a href="./homepage.html">To home page</a></div>
         <div><a href="./sign-in.html">To Sign in page</a></div>
